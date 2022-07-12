@@ -1,0 +1,23 @@
+package MultiThreads;
+
+public class Ex {
+	public static void main(String[]args)
+	{
+		InterThreadingCommunication obj = new
+				InterThreadingCommunication();
+		Producer p= new Producer(obj);
+		Consumer c= new Consumer(obj);
+		p.start();
+		c.start();
+		try
+		{
+			p.join();
+			c.join();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		}
+	}
+
