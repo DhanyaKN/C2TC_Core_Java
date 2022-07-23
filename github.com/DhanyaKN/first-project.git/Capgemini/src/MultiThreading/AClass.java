@@ -11,7 +11,7 @@ package MultiThreading;
 		bal=oldbal+amt;
 		setBalance(bal);
 	}
-	synchronized void withdraw(int amt)
+	synchronized void withdraw(Object amt)
 	{
 		System.out.println("Getting balance..");
 		int oldbal=getBalance();

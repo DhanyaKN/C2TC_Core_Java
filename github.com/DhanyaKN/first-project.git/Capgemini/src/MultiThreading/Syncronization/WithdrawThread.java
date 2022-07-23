@@ -1,16 +1,16 @@
-package MultiThreading;
-
-public class withDrawThread {
+package MultiThreading.Syncronization;
+public class WithdrawThread extends Thread {
 	AClass obj;
 	int amt;
 	//String msg;
-	public withDrawThread(AClass obj,int amt,String msg)
-
-	{
+	
+	public WithdrawThread(AClass obj, int amt,String msg) {	
 		this.obj = obj;
 		this.amt = amt;
 		//this.msg=msg;
 	}
+
+	@Override
 	public void run() {
 		try
 		{
@@ -23,13 +23,5 @@ public class withDrawThread {
 		//System.out.println("First");
 		obj.withdraw(amt);
 	}
-	public void start() {
-		// TODO Auto-generated method stub
-		
-	}
-	public void join() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }
-					

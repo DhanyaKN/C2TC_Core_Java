@@ -31,6 +31,8 @@ public class Account {
 			}wt1.start();
 			wt2.start();
 			try {
+				Object amt;
+				AClass obj;
 				obj.withdraw(amt);
 				public void join() {
 			}wt1.join();
